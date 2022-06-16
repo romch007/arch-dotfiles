@@ -5,14 +5,12 @@ set ssl_force_tls = yes
 set ssl_starttls = yes
 
 set imap_user = "cr105483@etu.unice.fr"
-set imap_pass = $MAIL_PASSWORD
 set folder = "imaps://outlook.office365.com/"
 set imap_check_subscribed
 
 set imap_keepalive = 300
 set mail_check = 120
 
-set smtp_pass = $MAIL_PASSWORD
 set smtp_url = "smtp://cr105483@etu.unice.fr@smtp.office365.com:587"
 
 set header_cache = "~/.cache/mutt"
@@ -27,3 +25,5 @@ mailboxes = +INBOX
 
 unset mark_old
 unset imap_passive
+
+source "gpg -d ~/.mutt/passwords.gpg |"
