@@ -1,0 +1,12 @@
+#
+# ~/.bash_profile
+#
+
+pwds=`gpg --recipient romain.chardiny@gmail.com --decrypt ~/.passwords.gpg`
+eval "$pwds"
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+#     startx
+# fi

@@ -1,0 +1,29 @@
+set realname = "Romain Chardiny"
+set from = "romain.chardiny@etu.univ-cotedazur.fr"
+
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
+set imap_user = "cr105483@etu.unice.fr"
+set imap_pass = $MAIL_PASSWORD
+set folder = "imaps://outlook.office365.com/"
+set imap_check_subscribed
+
+set imap_keepalive = 300
+set mail_check = 120
+
+set smtp_pass = $MAIL_PASSWORD
+set smtp_url = "smtp://cr105483@etu.unice.fr@smtp.office365.com:587"
+
+set header_cache = "~/.cache/mutt"
+
+# Store messages locally to speed things up, like searching message bodies.
+# Can be the same folder as header_cache.
+# This will cost important disk usage according to your e-mail amount.
+set message_cachedir = "~/.cache/mutt"
+
+set spoolfile = "+INBOX"
+mailboxes = +INBOX
+
+unset mark_old
+unset imap_passive
