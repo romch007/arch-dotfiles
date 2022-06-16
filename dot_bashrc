@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+set -o vi
+
 alias ls='ls --color=auto'
 alias ip='ip --color'
 alias ffmpeg='ffmpeg -hide_banner'
@@ -16,4 +18,3 @@ export PATH=~/.scripts:$PATH
 
 export EDITOR=vim
 export PS1="\[\033[38;5;9m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;10m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;12m\]\w\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
-
