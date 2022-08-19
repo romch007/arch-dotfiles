@@ -9,6 +9,7 @@ source ~/.bash_completion
 
 set -o vi
 
+alias grep='grep --color'
 alias ls='ls --color=auto'
 alias ip='ip --color'
 alias ffmpeg='ffmpeg -hide_banner'
