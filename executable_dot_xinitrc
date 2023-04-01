@@ -40,6 +40,7 @@ fi
 
 xcompmgr &
 feh --bg-scale /home/romain/Pictures/pexels-lumn-167698.jpg
-/home/romain/.dwm/autostart.sh &
+# /home/romain/.dwm/autostart.sh &
+/usr/local/bin/dwmblocks &
 /usr/bin/dunst &
 exec dwm
