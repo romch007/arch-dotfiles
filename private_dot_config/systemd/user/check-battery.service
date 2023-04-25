@@ -1,0 +1,11 @@
+[Unit]
+Description=Check battery
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/romain/.scripts/check-battery.sh
+WorkingDirectory=/home/romain/.scripts
+
+[Install]
+WantedBy=default.target
