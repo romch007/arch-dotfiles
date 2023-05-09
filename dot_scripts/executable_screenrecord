@@ -1,5 +1,0 @@
-#!/usr/bin/sh
-
-res=$(xrandr | grep '*' | awk '{ print $1 }')
-
-ffmpeg -video_size $res -framerate 60 -f x11grab -i :0.0 $1
