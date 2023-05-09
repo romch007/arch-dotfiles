@@ -29,3 +29,5 @@ export PATH=~/.local/bin:$PATH
 export PATH=~/.scripts:$PATH
 
 export EDITOR=nvim
+
+eval $(ssh-agent) > /dev/null
