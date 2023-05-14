@@ -9,6 +9,12 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+
+setopt SHARE_HISTORY
+
 prompt walters
 unsetopt beep
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
