@@ -37,6 +37,7 @@ if grep -q hypervisor /proc/cpuinfo; then
 fi
 
 xcompmgr &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 feh --bg-scale /home/romain/Pictures/pexels-lumn-167698.jpg
 /usr/local/bin/dwmblocks &
 /usr/bin/dunst &
